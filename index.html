@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -18,21 +18,85 @@
             <img src="./imagenes/amazing_brand.png" alt="" class="imglogo">
         </div>
         <ul class='navbarlist'>
-            <li class="navegador"><a href="" class="vinculo">HOME</a></li>
-            <li class="navegador"><a href="" class="vinculo">UPCOMINGS EVENTS</a></li>
-            <li class="navegador"><a href="" class="vinculo">PAST EVENTS</a></li>
-            <li class="navegador"><a href="" class="vinculo">CONTACT</a></li>
-            <li class="navegador"><a href="" class="vinculo">STATS</a></li>
+            <li class="navegador"><a href="#" class="vinculo">HOME</a></li>
+            <li class="navegador"><a href="./upcoming-events.html" class="vinculo">UPCOMINGS EVENTS</a></li>
+            <li class="navegador"><a href="./past-events.html" class="vinculo">PAST EVENTS</a></li>
+            <li class="navegador"><a href="./contact.html" class="vinculo">CONTACT</a></li>
+            <li class="navegador"><a href="./stats.html" class="vinculo">STATS</a></li>
         </ul>
     </nav>
 
     <header class="carrusel">
         <!-- Header -->
-        <div class="elemento">UPCOMINGS EVENTS</div>
-        <div class="elemento">PAST EVENTS</div>
-        <div class="elemento">CONTACT</div>
-        <div class="elemento">STATS</div>
+        <div id="contentItemsCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-1">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                    HOME
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-5"><i><span class="material-icons arrow">
+                                chevron_left
+                            </span></i></a>
+                    <a href="#itemCarrusel-2"><i><span class="material-icons arrow">
+                                chevron_right
+                            </span></i></a>
+                </div>
+            </div>
+        <div id="contentItemsCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-2">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                    UPCOMINGS EVENTS
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-1"><i><span class="material-icons arrow">
+                                chevron_left
+                            </span></i></a>
+                    <a href="#itemCarrusel-3"><i><span class="material-icons arrow">
+                                chevron_right
+                            </span></i></a>
+                </div>
+            </div>
 
+            <div class="itemCarrusel" id="itemCarrusel-3">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                    PAST EVENTS
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-2"><i><span class="material-icons arrow">
+                                chevron_left
+                            </span></i></a>
+                    <a href="#itemCarrusel-4"><i><span class="material-icons arrow">
+                                chevron_right
+                            </span></i></a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-4">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-4">
+                    CONTACT
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-3"><i><span class="material-icons arrow">
+                                chevron_left
+                            </span></i></a>
+                    <a href="#itemCarrusel-5"><i><span class="material-icons arrow">
+                                chevron_right
+                            </span></i></a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-5">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-5">
+                    STATS
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-4"><i><span class="material-icons arrow">
+                                chevron_left
+                            </span></i></a>
+                    <a href="#itemCarrusel-1"><i><span class="material-icons arrow">
+                                chevron_right
+                            </span></i></a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -53,7 +117,9 @@
             <div class="conteinerbusqueda">
                 <input type="text" placeholder="buscar">
                 <div class="btn">
-                    <i class="fa fa-search"></i>
+                    <i><span class="material-icons fa">
+                            search
+                        </span></i>
                 </div>
             </div>
         </div>
@@ -73,7 +139,7 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <div class="details">Details</div>
+                    <a href="./details.html" class="details">Details</a>
                 </div>
             </div>
 
@@ -90,7 +156,7 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <div class="details">Details</div>
+                    <a href="./details.html" class="details">Details</a>
                 </div>
             </div>
 
@@ -107,7 +173,7 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <div class="details">Details</div>
+                    <a href="./details.html" class="details">Details</a>
                 </div>
             </div>
 
@@ -124,19 +190,21 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <div class="details">Details</div>
+                    <a href="./details.html" class="details">Details</a>
                 </div>
             </div>
         </div>
     </main>
 
     <footer class="footercontenedor">
-            <ul class="footerlist">
-                <li><a href=""><img class="footerpng" src="./imagenes/facebook.png" alt="logo facebook"></a></li>
-                <li><a href=""><img class="footerpng" src="./imagenes/instagram.png" alt="logo instagram"></a></li>
-                <li><a href=""><img class="footerpng" src="./imagenes/whatsapp.png" alt="logo whatsapp"></a></li>
-            </ul>
-            <div class="footertext"><p>COHORT</p></div>
+        <ul class="footerlist">
+            <li><a href=""><img class="footerpng" src="./imagenes/facebook.png" alt="logo facebook"></a></li>
+            <li><a href=""><img class="footerpng" src="./imagenes/instagram.png" alt="logo instagram"></a></li>
+            <li><a href=""><img class="footerpng" src="./imagenes/whatsapp.png" alt="logo whatsapp"></a></li>
+        </ul>
+        <div class="footertext">
+            <p>COHORT</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
