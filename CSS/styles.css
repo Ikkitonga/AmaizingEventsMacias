@@ -3,39 +3,143 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-img{
-    width:15%;
-    height: 15%;
-    display: flex;
+                        /* css logo navbar */
+.imglogo{
+    width: 10rem;
 }
 
-nav{
-    background-color: aquamarine;
+.navbar{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
 }
 
-ul{
+.navbarlist{
+    list-style: none ;
+    display: flex;
+    margin: 1rem;
+}
+
+.navegador{
+    margin-left: 1rem;
+    border: 1px solid rgb(234, 7, 7);
+    padding: 0.5rem;
+}
+
+.vinculo{
+    text-decoration: none;
+    color: rgb(205, 26, 26);
+}
+
+                    /* css carrusel */
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    display: flex;
+}
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 10px;
+    background-color: rgb(253, 253, 254);
+    width: 100%;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    font-size: 5rem;
 }
 
-li{
-    list-style: none ;
-    padding: 10px;
-    margin: 10px;
+/* main de la pagina */
+
+main{
+    height: 35vw;
+}
+
+                    /* css checkboy y barra busqueda */
+
+
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.check{
+    margin-left: 20px;
+}
+
+.conteinerbusqueda{
+    display: flex;
+    align-items: center;
+}
+
+.fa{
+    border: 1px solid;
+    padding: 5px;
+}
+
+
+                        /* tarjetas */
+.tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    
+}
+
+.contenedortarjeta{
+    border: 2px solid black;
+    width: 15rem;
+    height: 18rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px black;
+    background-color: aliceblue;
+}
+.imgtarjeta{
+    width: 12rem;
+    height: 7rem;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+}
+
+.titulotarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-details{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.details{
     border: 1px solid black;
 }
 
-footer{
-    background-color: aquamarine;
+/* css footer */
+
+.footercontenedor{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
     align-items: center;
+    background-color: rgba(46, 3, 63, 0.731);
+    height: 5rem;
 }
+
+.footerlist{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footerpng{
+    width: 2rem;
+}
+
