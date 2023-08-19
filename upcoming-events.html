@@ -8,30 +8,32 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Home</title>
+    <title>Upcoming Events</title>
 </head>
 
 <body>
-    <nav class='navbar'>
-        <!-- Navbar -->
-        <div>
-            <img src="./imagenes/amazing_brand.png" alt="" class="imglogo">
+   <!-- navbar -->
+   <nav>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./imagenes/amazing_brand.png" alt="logo">
         </div>
-        <ul class='navbarlist'>
-            <li class="navegador"><a href="./index.html" class="vinculo">HOME</a></li>
-            <li class="navegador"><a href="#" class="vinculo">UPCOMINGS EVENTS</a></li>
-            <li class="navegador"><a href="./past-events.html" class="vinculo">PAST EVENTS</a></li>
-            <li class="navegador"><a href="./contact.html" class="vinculo">CONTACT</a></li>
-            <li class="navegador"><a href="./" class="vinculo">STATS</a></li>
-        </ul>
-    </nav>
+        <div class="vinculos">
+            <a href="./index.html">Home</a>
+            <a href="#">Upcoming Events</a>
+            <a href="./past-events.html">Past Events</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./stats.html">Stats</a>
+        </div>
+    </div>
+</nav>
 
     <header class="carrusel">
         <!-- Header -->
         <div id="contentItemsCarrusel">
             <div class="itemCarrusel" id="itemCarrusel-1">
                 <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
-                    HOME
+                    <img class="banner" src="./imagenes/optional_banner_1.jpg" alt="comida china">
                 </div>
                 <div class="flechasCarrusel">
                     <a href="#itemCarrusel-5"><i><span class="material-icons arrow">
@@ -45,7 +47,7 @@
         <div id="contentItemsCarrusel">
             <div class="itemCarrusel" id="itemCarrusel-2">
                 <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
-                    UPCOMINGS EVENTS
+                    <img class="banner" src="./imagenes/optional_banner_2.jpg" alt="asientos de cine">
                 </div>
                 <div class="flechasCarrusel">
                     <a href="#itemCarrusel-1"><i><span class="material-icons arrow">
@@ -59,7 +61,7 @@
 
             <div class="itemCarrusel" id="itemCarrusel-3">
                 <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
-                    PAST EVENTS
+                    <img class="banner" src="./imagenes/optional_banner_3.jpg" alt="boveda iglesia">
                 </div>
                 <div class="flechasCarrusel">
                     <a href="#itemCarrusel-2"><i><span class="material-icons arrow">
@@ -72,7 +74,7 @@
             </div>
             <div class="itemCarrusel" id="itemCarrusel-4">
                 <div class="tarjetaCarrusel" id="tarjetaCarrusel-4">
-                    CONTACT
+                    <img class="banner" src="./imagenes/optional_banner_4.jpg" alt="luces">
                 </div>
                 <div class="flechasCarrusel">
                     <a href="#itemCarrusel-3"><i><span class="material-icons arrow">
@@ -85,7 +87,7 @@
             </div>
             <div class="itemCarrusel" id="itemCarrusel-5">
                 <div class="tarjetaCarrusel" id="tarjetaCarrusel-5">
-                    STATS
+                    <img class="banner" src="./imagenes/optional_banner_5.jpg" alt="microfono">
                 </div>
                 <div class="flechasCarrusel">
                     <a href="#itemCarrusel-4"><i><span class="material-icons arrow">
@@ -101,7 +103,7 @@
 
     <main>
         <div class="conteiner">
-            <div>
+            <div class="checkbox">
                 <!-- category y search-->
                 <input type="checkbox" class="check">
                 <label for="">Category</label>
@@ -139,7 +141,9 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <a href="./details.html" class="details">Details</a>
+                    <div>
+                        <a href="./details.html" class="details">Details</a>
+                    </div>
                 </div>
             </div>
 
@@ -156,7 +160,9 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <a href="./details.html" class="details">Details</a>
+                    <div>
+                        <a href="./details.html" class="details">Details</a>
+                    </div>
                 </div>
             </div>
 
@@ -173,7 +179,9 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <a href="./details.html" class="details">Details</a>
+                    <div>
+                        <a href="./details.html" class="details">Details</a>
+                    </div>
                 </div>
             </div>
 
@@ -190,7 +198,9 @@
                     <div>
                         <p>Price</p>
                     </div>
-                    <a href="./details.html" class="details">Details</a>
+                    <div>
+                        <a href="./details.html" class="details">Details</a>
+                    </div>
                 </div>
             </div>
         </div>
