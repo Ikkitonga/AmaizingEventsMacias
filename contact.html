@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Contact</title>
 </head>
+
 <body>
-    
+    <!-- navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./imagenes/amazing_brand.png" alt="logo">
+            </div>
+            <div class="vinculos">
+                <a href="./index.html">Home</a>
+                <a href="./upcoming-events.html">Upcoming Events</a>
+                <a href="./past-events.html">Past Events</a>
+                <a href="#">Contact</a>
+                <a href="./stats.html">Stats</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="carrusel">
+        <!-- Header -->
+        <div id="contentItemsCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-1">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                    <img class="banner" src="./imagenes/optional_banner_1.jpg" alt="comida china">
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-5"><i><span class="material-icons arrow">
+                                chevron_left
+                            </span></i></a>
+                    <a href="#itemCarrusel-2"><i><span class="material-icons arrow">
+                                chevron_right
+                            </span></i></a>
+                </div>
+            </div>
+            <div id="contentItemsCarrusel">
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                        <img class="banner" src="./imagenes/optional_banner_2.jpg" alt="asientos de cine">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-1"><i><span class="material-icons arrow">
+                                    chevron_left
+                                </span></i></a>
+                        <a href="#itemCarrusel-3"><i><span class="material-icons arrow">
+                                    chevron_right
+                                </span></i></a>
+                    </div>
+                </div>
+
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                        <img class="banner" src="./imagenes/optional_banner_3.jpg" alt="boveda iglesia">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-2"><i><span class="material-icons arrow">
+                                    chevron_left
+                                </span></i></a>
+                        <a href="#itemCarrusel-4"><i><span class="material-icons arrow">
+                                    chevron_right
+                                </span></i></a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-4">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-4">
+                        <img class="banner" src="./imagenes/optional_banner_4.jpg" alt="luces">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-3"><i><span class="material-icons arrow">
+                                    chevron_left
+                                </span></i></a>
+                        <a href="#itemCarrusel-5"><i><span class="material-icons arrow">
+                                    chevron_right
+                                </span></i></a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-5">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-5">
+                        <img class="banner" src="./imagenes/optional_banner_5.jpg" alt="microfono">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-4"><i><span class="material-icons arrow">
+                                    chevron_left
+                                </span></i></a>
+                        <a href="#itemCarrusel-1"><i><span class="material-icons arrow">
+                                    chevron_right
+                                </span></i></a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main class="formulario">
+        <form action="">
+            <div>
+                <label for="">Name:</label>
+            </div>
+            <div>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="">Email:</label>
+            </div>
+            <div>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="">Message:</label>
+            </div>
+            <div>
+                <input type="text" name="" id="mensaje">
+            </div>
+            <div class="submit">
+                <input type="submit" name="" id="boton">
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="footercontenedor">
+        <ul class="footerlist">
+            <li><a href=""><img class="footerpng" src="./imagenes/facebook.png" alt="logo facebook"></a></li>
+            <li><a href=""><img class="footerpng" src="./imagenes/instagram.png" alt="logo instagram"></a></li>
+            <li><a href=""><img class="footerpng" src="./imagenes/whatsapp.png" alt="logo whatsapp"></a></li>
+        </ul>
+        <div class="footertext">
+            <p>COHORT</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
