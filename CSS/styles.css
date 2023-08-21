@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,42 +7,49 @@
 /* --------------- */
 /* css logo navbar */
 /* --------------- */
-
-.imglogo{
+.logo img {
     width: 10rem;
 }
 
-.navbar{
+nav {
+    color: crimson;
+    width: 100%;
+}
+
+
+nav a {
+    color: crimson;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+}
+
+/* nav a:hover {
+    color: black;
+    background-color: #00c3ff;
+} */
+
+nav .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.navbarlist{
-    list-style: none ;
+nav .navbar .vinculos {
     display: flex;
-    margin: 1rem;
 }
 
-.navegador{
-    margin-left: 1rem;
-    border: 1px solid rgb(234, 7, 7);
-    padding: 0.5rem;
-}
-
-.vinculo{
-    text-decoration: none;
-    color: rgb(205, 26, 26);
-}
-
-/* ------------ */
-/* css carrusel */
-/* ------------ */
+/* ------------------- */
+/* Iconos google fonts */
+/* ------------------- */
 
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -50,34 +57,39 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
+
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
+
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 
-#contentItemsCarrusel{
+/* ------------ */
+/* css carrusel */
+/* ------------ */
+
+
+#contentItemsCarrusel {
     height: 200px;
     overflow: hidden;
 }
 
-.itemCarrusel{
+.itemCarrusel {
     height: 100%;
     position: relative;
 }
 
-.tarjetaCarrusel{
+.tarjetaCarrusel {
     height: 100%;
 }
 
-.flechasCarrusel{
+.flechasCarrusel {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -88,83 +100,87 @@
     padding: 20px;
 }
 
-#tarjetaCarrusel-1{
+#tarjetaCarrusel-1 {
     font-size: 6rem;
     text-align: center;
     color: crimson;
 }
 
-#tarjetaCarrusel-2{
+#tarjetaCarrusel-2 {
     font-size: 6rem;
     text-align: center;
     color: crimson;
-    
+
 }
 
-#tarjetaCarrusel-3{
-    font-size: 6rem;
-    text-align: center;
-    color: crimson;
-}
-
-#tarjetaCarrusel-4{
+#tarjetaCarrusel-3 {
     font-size: 6rem;
     text-align: center;
     color: crimson;
 }
 
-#tarjetaCarrusel-5{
+#tarjetaCarrusel-4 {
     font-size: 6rem;
     text-align: center;
     color: crimson;
 }
 
-.arrow{
+#tarjetaCarrusel-5 {
+    font-size: 6rem;
+    text-align: center;
+    color: crimson;
+}
+
+.arrow {
     font-size: 3rem !important;
     color: crimson;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
+.banner {
+    height: 50vw;
+}
+
+
 /* ----------------- */
-/* main de la pagina */
+/* main de las paginas */
 /* ----------------- */
 
-main{
+main {
     height: 35vw;
 }
 
 /* ----------------------------- */
-/* css checkboy y barra busqueda */
+/* css checkbox y barra busqueda */
 /* ----------------------------- */
 
-.conteiner{
+.conteiner {
     display: flex;
     justify-content: space-between;
     align-content: center;
     color: crimson;
 }
 
-.check{
+.check {
     margin-left: 20px;
 }
 
-input{
-    border:1px solid crimson;
+input {
+    border: 1px solid crimson;
     color: crimson;
     text-align: center;
 }
 
 
-
-.conteinerbusqueda{
+.conteinerbusqueda {
     display: flex;
     align-items: center;
 }
 
-.fa{
+.fa {
     border: 1px solid;
     padding: 1px;
     align-items: center;
@@ -175,43 +191,45 @@ input{
 /* tarjetas */
 /* -------- */
 
-.tarjetas{
+.tarjetas {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 2.5rem;
 }
 
-.contenedortarjeta{
+.contenedortarjeta {
     border: 2px solid crimson;
     width: 15rem;
     height: 18rem;
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 10px rgba(220, 20, 60, 0.366);
+    box-shadow: 10px 10px rgba(94, 59, 66, 0.366);
     background-color: aliceblue;
 }
-.imgtarjeta{
+
+.imgtarjeta {
     width: 12rem;
     height: 7rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-top: 0.8rem;
 }
 
-.titulotarjeta{
+.titulotarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.price-details{
+.price-details {
     display: flex;
     justify-content: space-around;
+    align-content: center;
     margin-top: 2rem;
 }
 
-.details{
+.details {
     border: 1px solid crimson;
     padding: 5px;
 }
@@ -220,21 +238,267 @@ input{
 /* css footer */
 /* ---------- */
 
-.footercontenedor{
+.footercontenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 0, 0, 0.362);
+    background-color: rgba(255, 0, 0, 0.726);
     height: 5rem;
 }
 
-.footerlist{
+.footerlist {
     display: flex;
     list-style: none;
     gap: 1rem;
 }
 
-.footerpng{
+.footerpng {
     width: 2rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.349);
 }
 
+.footertext {
+    margin-right: 1rem;
+}
+
+/* -------------- */
+/* Pagina CONTACT */
+/* -------------- */
+
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    flex-direction: column;
+    margin: 5rem;
+}
+
+#name{
+    padding-right: 5rem;
+}
+
+#email{
+    padding-right: 5rem;
+}
+
+#mensaje{
+    padding: 2.5rem;
+}
+
+.submit{
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+}
+
+#boton{
+    padding: 0 5px;
+}
+
+/* ------------------ */
+/* estilos para tabla */
+/* ------------------ */
+
+.tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th{
+    padding: 5px;
+    background-color: darkgray;
+}
+
+.tabla tr{
+    border: 1px solid black;
+}
+
+.tabla td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+/* --------------- */
+/* estilos pagina details */
+/* --------------- */
+
+.main-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetadetails{
+    border: solid crimson  1px ;
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 10px 10px rgba(94, 59, 66, 0.366);
+}
+
+.detailsimg{
+    border: 1px solid crimson;
+    height: 45vh;
+    width: 50%;
+    margin-left: 2rem;
+    box-shadow: 10px 10px rgba(94, 59, 66, 0.366);
+}
+
+.imagen-details{
+    height: 45vh;
+    width: 100%;
+}
+
+.info-details{
+    display: flex;
+    box-shadow: 10px 10px rgba(94, 59, 66, 0.366);
+    justify-content: center;
+    flex-direction: column;  
+    border: 1px solid crimson;
+    width: 25vw;
+    height: 45vh;
+}
+
+
+.titulo-tarjetadetails{
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo-details{
+    margin-left: 2vh;
+}
+
+
+/* --------------------------------------- */
+/* Responsive index, upcoming, past events */
+/* --------------------------------------- */
+
+@media screen and (max-width: 768px){
+    main{
+        height: auto;
+    }
+
+    .conteiner {
+        display: block;
+        text-align: center;
+    }
+    .checkbox,
+    .conteinerbusqueda {
+        display: block;
+        margin: 10px auto;
+    }
+   
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(34%, max-content));
+        gap: 15px;
+    }
+
+    th{
+        padding: 2px;
+        font-size: 10px;
+    }
+    .tabla td{
+        padding: 2px;
+        font-size: 8px;
+    }
+
+    table{
+        margin: 1.52rem 1rem 1rem 1rem;
+    }
+
+    /* estilos pagina details */
+
+    .main-details{
+        height: 53vw;
+    }
+}
+
+
+
+@media screen and (max-width: 320px){
+    .logo img {
+        width: 10rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .vinculos a {
+        font-size: 12px;
+    }
+
+    #contentItemsCarrusel {
+        height: 100px;
+    }
+
+    .conteiner {
+        display: block;
+        text-align: center;
+    }
+
+    main{
+        height: auto;
+    }
+
+    .checkbox,
+    .conteinerbusqueda {
+        display: block;
+        margin: 10px auto;
+    }
+    /* estilos para pagina stats */
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* estilos para pagina details */
+    .main-details{
+        height: 70vh;
+    }
+    
+    .tarjetadetails{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detailsimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        width: 80%;
+        height: 20vh;
+        margin-right: 30px;
+        box-shadow: 3px 3px rgb(150, 145, 145);
+    }
+    .imagen-details{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .info-details{
+        width: 80%;
+        height: auto;
+        box-shadow: none;
+        box-shadow: 3px 3px rgb(150, 145, 145);
+    }
+
+    .titulo-tarjetadetails{
+        font-size: 1.3rem;
+    }
+    .parrafo-details{
+        font-size: 0.6rem;
+    }
+}
