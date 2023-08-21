@@ -8,6 +8,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">  
     <title>Contact</title>
 </head>
 
@@ -45,7 +47,7 @@
                             </span></i></a>
                 </div>
             </div>
-            <div id="contentItemsCarrusel">
+    
                 <div class="itemCarrusel" id="itemCarrusel-2">
                     <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
                         <img class="banner" src="./imagenes/optional_banner_2.jpg" alt="asientos de cine">
@@ -102,28 +104,29 @@
             </div>
     </header>
 
+    <!-- a la etiqueta form le borre el action para que no de error el validador -->
     <main class="formulario">
-        <form action="">
+        <form>
             <div>
-                <label for="">Name:</label>
+                <label for="name">Name:</label>
             </div>
             <div>
                 <input type="text" id="name">
             </div>
             <div>
-                <label for="">Email:</label>
+                <label for="email">Email:</label>
             </div>
             <div>
                 <input type="email" id="email">
             </div>
             <div>
-                <label for="">Message:</label>
+                <label for="mensaje">Message:</label>
             </div>
             <div>
-                <input type="text" name="" id="mensaje">
+                <input type="text" name="message" id="mensaje">
             </div>
             <div class="submit">
-                <input type="submit" name="" id="boton">
+                <input type="submit" name="submit" id="boton">
             </div>
         </form>
 
