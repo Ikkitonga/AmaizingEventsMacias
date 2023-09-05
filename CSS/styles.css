@@ -162,6 +162,7 @@ main {
     justify-content: space-between;
     align-content: center;
     color: crimson;
+    margin-top: 20px;
 }
 
 .check {
@@ -350,33 +351,45 @@ th{
 /* estilos pagina details */
 /* --------------- */
 
+.cuerpo-details{
+    height: 30.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-details{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70%;
 }
 
 .tarjetadetails{
     border: solid crimson  1px ;
-    width: 70%;
+    width: 100%;
     height: 60vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     box-shadow: 10px 10px rgba(94, 59, 66, 0.366);
+    border-radius: 10px;
 }
 
 .detailsimg{
     border: 1px solid crimson;
     height: 45vh;
     width: 50%;
-    margin-left: 2rem;
+    margin-left: 1rem;
     box-shadow: 10px 10px rgba(94, 59, 66, 0.366);
+    border-radius: 10px;
 }
 
 .imagen-details{
     height: 45vh;
     width: 100%;
+    border-radius: 10px;
 }
 
 .info-details{
@@ -387,6 +400,7 @@ th{
     border: 1px solid crimson;
     width: 25vw;
     height: 45vh;
+    border-radius: 10px;
 }
 
 
@@ -448,13 +462,33 @@ th{
     }
 
     /* estilos pagina details */
+    .cuerpo-details{
+        height: 74.4vh;
+    }
 
     .main-details{
-        height: 53vw;
+        width: 90%;
     }
+
+    .tarjetadetails{
+        justify-content: space-around;
+    }
+
+    .detailsimg{
+        width:36vw;
+    }
+
+   .imagen-details{
+    width:36vw ;
+   }
+
+   .info-details{
+    width: fit-content;
+    margin-right: 10px;
+    height: fit-content;
+   }
+
 }
-
-
 
 @media screen and (max-width: 320px){
     nav{
@@ -512,14 +546,18 @@ th{
     }
 
     /* estilos para pagina details */
-    .main-details{
-        height: 70vh;
+
+    .cuerpo-details{
+        height: 69vh;
     }
     
+    
     .tarjetadetails{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 20rem;
     }
 
     .detailsimg{
@@ -529,7 +567,7 @@ th{
         box-shadow: none;
         width: 80%;
         height: 20vh;
-        margin-right: 30px;
+        margin-right: 20px;
         box-shadow: 3px 3px rgb(150, 145, 145);
     }
     .imagen-details{
