@@ -113,9 +113,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Events with highest % of assistance</td>
-                    <td>Events with lowest % of assistance</td>
-                    <td>Events with longer capacity</td>
+                    <td id="moreAssistance">Events with highest % of assistance</td>
+                    <td id="lowAssistance">Events with lowest % of assistance</td>
+                    <td id="longCapacity">Events with longer capacity</td>
                 </tr>
                 <tr>
                     <th colspan="3">Upcoming events statistics by category</th>
@@ -126,15 +126,11 @@
                     <td>Percentage of assistance</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><select name="category" id="category"></select></td>
+                    <td id="revenuesUp">&nbsp;</td>
+                    <td id="porcentOfAssistanceUp">&nbsp;</td>
                 </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
+                
                 <tr>
                     <th colspan="3">Past events statistics by category</th>
                 </tr>
@@ -144,15 +140,11 @@
                     <td>Percentage of assistance</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><select name="category" id="categorypast"></select></td>
+                    <td id="revenuesPast">&nbsp;</td>
+                    <td id="porcentOfAssistancePast">&nbsp;</td>
                 </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
+               
             </tbody>
 
         </table>
@@ -169,6 +161,8 @@
             <p>COHORT</p>
         </div>
     </footer>
+
+    <script src="./javascript/stats.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
