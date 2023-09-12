@@ -49,6 +49,7 @@ function mostrarEventosPasados(eventos) {
         `;
         contenidoCards.appendChild(tarjeta);
       }
+      console.log(currentDate)
     });
   }
 }
